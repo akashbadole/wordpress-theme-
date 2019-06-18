@@ -28,6 +28,20 @@ function twentynineteen_widgets_init() {
 add_action( 'widgets_init', 'twentynineteen_widgets_init' );
 
 
+
+// Register Navigation Menus
+function custom_navigation_menus() {
+
+  $locations = array(
+    'primary' => __( 'primary_theme_menu', 'text_domain' ),
+    'Secondary' => __( 'secondary_theme', 'text_domain' ),
+  );
+  register_nav_menus( $locations );
+
+}
+add_action( 'init', 'custom_navigation_menus' );
+
+
 // Add Twitter Bootstrap's standard 'active' class name to the active nav link item
 add_filter('nav_menu_css_class', 'wp_bootstrap_add_active_class', 10, 2 );
 
@@ -118,6 +132,18 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
   }
 }
 add_action( 'wp_enqueue_scripts', 'wp_bootstrap_theme_js' );
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?>

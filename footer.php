@@ -15,7 +15,7 @@
 						<?php //wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 					
-					<p class="pull-right"><a href="#" id="credit320" title="">Akash Badole</a></p>
+					<p class="small text-center text-muted"><a href="#" id="credit320" title="">Wordrpress Developer - Akash Badole</a></p>
 			
 					<div class="small text-center text-muted"><p class="attribution">&copy; <?php bloginfo('name'); ?></p></div>
 				
