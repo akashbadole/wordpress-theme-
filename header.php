@@ -18,17 +18,18 @@
 	
 </head>
 
-<body id="page-top"  <?php body_class(); ?>>
+<body  id="#page-top" <?php body_class(); ?>>
 
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a> -->
+      <a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"  href="#page-top"><?php bloginfo('name'); ?></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+      
       <div class="collapse navbar-collapse" id="navbarResponsive">
       	<?php //wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 
@@ -48,11 +49,11 @@
           </li>
         </ul>
 
-        <form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-		<div class="form-group">
-		<input name="s" id="s" type="text" class="search-query form-control" autocomplete="off" placeholder="<?php _e('Search','wpbootstrap'); ?>">
+       <!--  <form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php //echo home_url( '/' ); ?>"> -->
+		<!-- <div class="form-group">
+		<input name="s" id="s" type="text" class="search-query form-control" autocomplete="off" placeholder="<?php //_e('Search','wpbootstrap'); ?>">
 		</div>
-		</form>
+		</form> -->
 		<?php //} ?>
 
 
